@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  cursor: none;
+}
+h1 {
+  font-size: $header1;
+}
+
+h2 {
+  font-size: $header2;
+}
+
+h3 {
+  font-size: $header3;
+}
+
+h4,
+h5 {
+  font-size: $header4;
+}
+
+li,
+button,
+label,
+input,
+p,
+a {
+  font-size: $text;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: $gray-text;
+}
+
+.cursor {
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transition-property: background, transform;
+  transform-origin: 100% 100%;
+  z-index: 0;
+}
+
+.link-grow {
+  transform: scale(2.5);
+  background: rgb(0, 0, 0);
+}
+
+.hover-link {
+  color: white;
+  font-weight: bold;
+}

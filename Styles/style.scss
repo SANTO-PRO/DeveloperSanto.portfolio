@@ -1,0 +1,122 @@
+$header1: 2.5rem;
+$header2: 4rem;
+$header3: 1.5rem;
+$header4: 2rem;
+$text: 2.5rem;
+$gradient: linear-gradient(left, #38d39f, #38a4d3);
+$bg-color: #154353;
+$gray-text: #2c2c2c;
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
+
+@import "global";
+@import "intro";
+@import "animations";
+@import "projects";
+@import "contact";
+@import "footer";
+@import "error";
+
+//  Responsive-Part ----->
+@media screen and (max-width: 1450px) {
+  html {
+    font-size: 53%;
+  }
+  .splash {
+    display: none;
+  }
+
+  .contact-img {
+    display: none;
+  }
+
+  svg {
+    width: 80%;
+  }
+  nav {
+    width: 100%;
+  }
+
+  .contact {
+    .form-wrapper {
+      width: 55vw;
+    }
+    textarea {
+      padding: 0.5rem 4rem;
+      font-size: 2rem;
+    }
+    input {
+      padding: 0.5rem 3.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 754px) {
+  html {
+    font-size: 45%;
+  }
+  svg {
+    height: 60%;
+  }
+  .main-head {
+    width: 100%;
+  }
+  nav {
+    .logo {
+      @include flex(center, center, column);
+      flex: 1 1 20rem;
+      margin-top: 2rem;
+    }
+    ul {
+      flex: 1 1 60rem;
+      margin: 2rem 0rem;
+    }
+  }
+  .intro-text {
+    margin-top: 5rem;
+    text-align: center;
+  }
+
+  .intro-images {
+    text-align: center;
+  }
+
+  .intro-social {
+    @include flex(center, center, row);
+    a {
+      margin: 2rem;
+    }
+  }
+
+  .travelly,
+  .helena {
+    flex: 1 1 50rem;
+    img {
+      width: 95%;
+      height: 27vh;
+    }
+  }
+  .contact {
+    .form-wrapper {
+      width: 85vw;
+    }
+    textarea {
+      padding: 0.5rem 1rem;
+      font-size: 1.8rem;
+    }
+    input {
+      padding: 0.5rem 0.5rem;
+    }
+    h2 {
+      margin: 0.1rem;
+    }
+  }
+  .cursor {
+    display: none;
+  }
+}
