@@ -1,45 +1,45 @@
 #plant-left {
-  animation: plant 1.5s ease infinite alternate;
+	animation: plant 1.5s ease infinite alternate;
 }
 
 #plant-right {
-  animation: plant 1.5s ease infinite alternate-reverse 0.5s;
+	animation: plant 1.5s ease infinite alternate-reverse 0.5s;
 }
 
 #me {
-  animation: me 1.5s ease-in-out infinite alternate-reverse;
-  transform-origin: bottom;
+	animation: me 1.5s ease-in-out infinite alternate-reverse;
+	transform-origin: bottom;
 }
 
 #clock-arrow {
-  animation: clock 1.5s linear infinite;
-  transform-box: fill-box;
-  transform-origin: bottom;
+	animation: clock 1.5s linear infinite;
+	transform-box: fill-box;
+	transform-origin: bottom;
 }
 
 @keyframes me {
-  from {
-    transform: rotateZ(-5deg);
-  }
-  to {
-    transform: rotateZ(5deg);
-  }
+	from {
+		transform: rotateZ(-5deg);
+	}
+	to {
+		transform: rotateZ(5deg);
+	}
 }
 
 @keyframes plant {
-  from {
-    transform: translateY(0%);
-  }
-  to {
-    transform: translateY(-30%);
-  }
+	from {
+		transform: translateY(0%);
+	}
+	to {
+		transform: translateY(-30%);
+	}
 }
 
 @keyframes clock {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
